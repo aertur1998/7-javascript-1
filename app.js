@@ -195,3 +195,16 @@ else {
 }
 
 console.log('Итог')
+
+
+const deposit = 12000;
+const rate = 7;
+const depositLength = 24;
+const houseCost = 13500;
+const result = deposit * (1 + ((rate / 100) / 12)) ** depositLength;
+if (result > houseCost) {
+    console.log(`Да, сможет. На счету ${result}$\nОстаток на баллансе:${result - houseCost}$`)
+} else {
+    console.log(`Нет, не сможет. На счету ${result}$`)
+}
+
