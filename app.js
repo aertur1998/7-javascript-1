@@ -181,22 +181,21 @@ console.log(Boolean(NaN));
 
 /*2.2 управление потоком*/
 
-const money = 100;
-/*const canBuy = money > 50; */
+/*const money = 100;
+/!*const canBuy = money > 50; *!/
 
 if (money > 50) {
     console.log('Может купить наш продукт');
-}
-else if (money > 5) {
+} else if (money > 5) {
     console.log('Куплен mini продукт');
-}
-else {
+} else {
     console.log('Не хватает баланса')
 }
 
-console.log('Итог')
+console.log('Итог')*/
 
 
+/*
 const deposit = 12000;
 const rate = 7;
 const depositLength = 24;
@@ -207,4 +206,20 @@ if (result > houseCost) {
 } else {
     console.log(`Нет, не сможет. На счету ${result}$`)
 }
+*/
 
+const secretNumber = '7';
+
+if (Number(secretNumber === 7)) {
+    console.log('Угадал строго');
+}
+
+if (secretNumber == 7) {
+    console.log('Угадал не строго');
+}
+
+const q = Number(prompt('Введите число'));
+
+if (q===7) {
+    console.log('!');
+}
