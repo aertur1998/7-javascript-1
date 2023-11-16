@@ -169,9 +169,29 @@ const a = 2 + '10';
 console.log(a - 10);
  */
 
+/*
+
 console.log(Boolean(0));
 console.log(Boolean(''));
 console.log(Boolean(undefined));
 console.log(Boolean(null));
 console.log(Boolean(Number('sd')));
 console.log(Boolean(NaN));
+*/
+
+/*2.2 управление потоком*/
+
+const money = 100;
+/*const canBuy = money > 50; */
+
+if (money > 50) {
+    console.log('Может купить наш продукт');
+}
+else if (money > 5) {
+    console.log('Куплен mini продукт');
+}
+else {
+    console.log('Не хватает баланса')
+}
+
+console.log('Итог')
