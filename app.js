@@ -135,6 +135,7 @@ const template4 = `Проект
 console.log(template4);
 */
 
+/*
 const age = '18';
 //конкатенция
 console.log(age + 5);
@@ -166,3 +167,11 @@ console.log(true + 10);//11
 
 const a = 2 + '10';
 console.log(a - 10);
+ */
+
+console.log(Boolean(0));
+console.log(Boolean(''));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(Number('sd')));
+console.log(Boolean(NaN));
