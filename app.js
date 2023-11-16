@@ -112,6 +112,7 @@ console.log('Смогу ли я работать? ' + (availableHours > projectH
 console.log('Стоимость работ: '+ projectHours * payRateUsd + ' USD');
 */
 
+/*
 const projectName = 'Сайт магазина';
 const price=2000;
 const author = 'Василий';
@@ -132,3 +133,36 @@ console.log(template3);
 const template4 = `Проект 
 Цена: ${price} $`;
 console.log(template4);
+*/
+
+const age = '18';
+//конкатенция
+console.log(age + 5);
+//прибавление
+console.log(Number(age) + 5);
+//НО матем уравнения или вычетания js преобразует автоматом(неявно) в числа
+console.log(age - 5);
+console.log(age * 5);
+console.log(age / 5);
+console.log(age ** 5);
+
+const userName = 'Вася';
+//конкатенция
+console.log(userName + 5);
+//ошибка конвертации получаем NaN not a number
+console.log(Number(userName) + 5);
+
+//число
+console.log(4 + 7);
+//строка
+console.log(String(4) + 7);
+//проверка на пустоту
+console.log(Boolean(0));//false
+console.log(Boolean(''));//false
+console.log(Boolean(123));//true
+console.log(Boolean('asd'));//true
+console.log(Boolean('') + 10);//10
+console.log(true + 10);//11
+
+const a = 2 + '10';
+console.log(a - 10);
