@@ -111,3 +111,24 @@ const availableHours = (11-2)*5;
 console.log('Смогу ли я работать? ' + (availableHours > projectHours));
 console.log('Стоимость работ: '+ projectHours * payRateUsd + ' USD');
 */
+
+const projectName = 'Сайт магазина';
+const price=2000;
+const author = 'Василий';
+
+//Пример классической конкатенации строк
+const template = author + ' заказал ' + projectName + ' по цене ' + price + ' $';
+console.log(template);
+
+//Пример шаблонных строк
+const template2 = `${author} заказал ${projectName} по цене ${price} $`;
+console.log(template2);
+
+//Пример классической конкатенации строк
+const template3 = 'Проект \n' + 'Цена: '+price+'$';
+console.log(template3);
+
+//Пример шаблонных строк
+const template4 = `Проект 
+Цена: ${price} $`;
+console.log(template4);
