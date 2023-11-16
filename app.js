@@ -208,6 +208,8 @@ if (result > houseCost) {
 }
 */
 
+/*
+
 const secretNumber = '7';
 
 if (Number(secretNumber === 7)) {
@@ -222,4 +224,43 @@ const q = Number(prompt('Введите число'));
 
 if (q===7) {
     console.log('!');
+}
+*/
+
+const role = 'manager';
+
+if (role === 'manager') {
+    console.log('Manager');
+} else if (role === 'admin') {
+    console.log('Admin');
+} else if (role === 'CEO') {
+    console.log('CEO');
+} else {
+    console.log('Unauthorized');
+}
+
+switch (role) {
+    case 'manager': /*role === 'manager'*/
+    case 'admin':
+        console.log('Not a management');
+        break;
+    case 'CEO':
+        console.log('Management');
+        break;
+    default:
+        console.log('Unauthorized');
+}
+
+const num = 1;
+
+switch (true) {
+    case num > 0: /*true === num > 0*/
+        console.log('Positive');
+        break;
+    case num < 0:
+        console.log('Negative');
+        break;
+    default:
+        console.log('Zero');
+        break;
 }
