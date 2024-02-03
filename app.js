@@ -227,6 +227,7 @@ if (q===7) {
 }
 */
 
+/*
 const role = 'manager';
 
 if (role === 'manager') {
@@ -240,7 +241,7 @@ if (role === 'manager') {
 }
 
 switch (role) {
-    case 'manager': /*role === 'manager'*/
+    case 'manager': //role === 'manager'
     case 'admin':
         console.log('Not a management');
         break;
@@ -254,7 +255,7 @@ switch (role) {
 const num = 1;
 
 switch (true) {
-    case num > 0: /*true === num > 0*/
+    case num > 0: //true === num > 0
         console.log('Positive');
         break;
     case num < 0:
@@ -264,3 +265,21 @@ switch (true) {
         console.log('Zero');
         break;
 }
+ */
+
+const bmwX3Price = 100000;
+const fordFocusPrice=10000;
+const budget = 20000;
+
+let message;
+if (budget > bmwX3Price) {
+    message = 'BMW';
+} else {
+    message = 'Bike';
+}
+/*
+const str = 10 > 0 ? 'Bigger than 0' : 'Less than 0';
+console.log(str);
+*/
+
+console.log(`I want to buy a ${budget > bmwX3Price ? 'BMW' : budget > fordFocusPrice ? 'Focus' :'Bike'}`);
